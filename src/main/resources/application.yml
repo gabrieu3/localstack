@@ -1,0 +1,16 @@
+server:
+  port: 9080
+spring:
+  data:
+    dynamodb:
+      entity2ddl:
+        auto: create
+        gsiProjectionType: ALL
+        readCapacity: 10
+        writeCapacity: 1
+aws:
+  region: us-east-1
+  dynamodb:
+    endpoint: 'http://localhost:4569'
+    accesskey: localstack
+    secretkey: localstack
